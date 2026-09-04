@@ -18,8 +18,7 @@ print(f"nom: {etudiant['nom']}, âge: {etudiant['age']} et note: {etudiant['note
 
 produit = {
  "nom": "Ordinateur", "prix": 8500,
- "stock": 12, "categorie":
-"Informatique"
+ "stock": 12, "categorie": "Informatique"
 }
 
 produit["prix"] = 7900
