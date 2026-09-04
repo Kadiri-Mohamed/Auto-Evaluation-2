@@ -26,14 +26,21 @@ def distance_euclidienne(villeA, villeB):
 def itineraire_greedy(villes):
     ville_act = villes[0]
     list_villes_ord = [ville_act]
+    villes_restantes = villes[1:]
 
-    for i in range(1, len(villes)-1):
-        ville_next = villes[i]
+    while villes_restantes:
+        ville_next = villes_restantes[0]
+        distance_min = distance_euclidienne(ville_act, ville_next)
 
-        if distance_euclidienne(ville_act, ville_next) < distance_euclidienne(ville_act, villes[i+1]):
-            ville_next = villes[i+1]
+        for ville in villes_restantes:
+            distance = distance_euclidienne(ville_act, ville)
+
+            if distance < distance_min:
+                distance_min = distance
+                ville_next = ville
 
         list_villes_ord.append(ville_next)
+        villes_restantes.remove(ville_next)
         ville_act = ville_next
 
     return list_villes_ord
