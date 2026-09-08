@@ -1,0 +1,22 @@
+[
+    {
+        "nom": "Paris",
+        "latitude": 48.8567,
+        "longitude": 2.3522
+    },
+    {
+        "nom": "Bordeaux",
+        "latitude": 44.84,
+        "longitude": -0.58
+    },
+    {
+        "nom": "Lyon",
+        "latitude": 45.75,
+        "longitude": 4.85
+    },
+    {
+        "nom": "Marseille",
+        "latitude": 43.30,
+        "longitude": 5.37
+    }
+]
