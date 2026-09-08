@@ -42,7 +42,7 @@ ve1.afficher_info()
 @dataclass
 class Concession:
     nom: str
-    inventaire: list = field(default_factory=list)
+    inventaire: list = []
 
     def ajouter_voiture(self, voiture: Voiture | VoitureElectrique):
         self.inventaire.append(voiture)
